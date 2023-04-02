@@ -38,19 +38,32 @@
 
         <!-- App Preview or Screenshot(s) -->
         <div class="device {{ site.device }}">
-          {% if site.app.video %}
-               <div class="video-container">
-                <iframe src="{{ site.app.video }}" height="426.66" width="240" allowfullscreen="" frameborder="0">
-                </iframe>
-              </div>
-
-          {% else %}
+          <div class = "conversation">
           <a href="https://api.whatsapp.com/send?phone=5491173603358&text=Cuentame">
             <img
              class="app-screenshot"
              {% if site.app.screenshot %}src="{{ site.app.screenshot }}"{% endif %}
-            />
+            alt="app-screenshot"/>
+            <button class = "button-chatea">Chatea ahora</button>
           </a>
+          </div>
+          <style>
+            .button-chatea{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              background-color: #4CAF50;
+              color: white;
+              font-size: 16px;
+              padding: 12px 24px;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+              text-align: center;
+            }
+          </style>
           {% endif %}
         </div>
       </div>
