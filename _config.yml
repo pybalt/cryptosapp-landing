@@ -9,8 +9,8 @@
 #
 app:
   name: Cryptosapp # REQUIRED - Enter your app name
-  ios_id: 912209541 # TODO: Change this later.
-  android_id: # Optional - Enter Android app id like: com.example.app
+  ios_id: 1 # TODO: Change this later.
+  android_id: 1 # Optional - Enter Android app id like: com.example.app
 
   icon: images/app-icon.png # Leave blank to auto-magically populate
   # To update use path relative to project root with no leading slash:
