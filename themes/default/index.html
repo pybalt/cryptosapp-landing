@@ -23,16 +23,13 @@
           {% endif %}
 
           <p class="marketing-desc">{{ site.marketing_desc }}</p>
-          <div class="download-buttons">
+          <div class="wpp-button">
             <a
               class="download-btn btn btn-lg"
               href="https://api.whatsapp.com/send?phone=5491173603358&text=Cuentame">
-              <i class="fa fa-apple fa-lg" aria-hidden="true"></i> App Store
+              <img src="/images/wppbutton.png" alt="wpp button" srcset="" height="">
             </a>
-
-            {% if site.app.android_id %}
-            <img src="/images/QR-scan-me.png" alt="" srcset="">
-            {% endif %}
+            <img src="/images/QR-scan-me.png" alt="qr button" srcset="">
           </div>
         </div>
       </div>
