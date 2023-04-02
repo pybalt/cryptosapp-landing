@@ -26,9 +26,9 @@
           <div class="buttons">
             <a
               href="https://api.whatsapp.com/send?phone=5491173603358&text=Cuentame">
-              <img src="../../images/wppbutton.png" alt="wpp button" srcset="" height="">
+              <img {% if site.whatsapp_button %}src="{{ site.whatsapp_button}}"{% endif %}  alt="wpp button" height="">
             </a>
-            <img src="../../images/QR-scan-me.png" alt="qr button" srcset="">
+            <img {% if site.qr_code_button %}src="{{ site.qr_code_button}}"{% endif %} alt="qr button">
           </div>
         </div>
       </div>

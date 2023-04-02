@@ -89,6 +89,15 @@ download_button_background_color: "#0191FF" # Optional
 download_button_text_color: white; # Optional
 
 #
+# Buttons
+#
+
+qr_code_button: images/QR-scan-me.png # Optional - Use Relative path e.g. images/qr-code.png
+whatsapp_button: images/wppbuton.png # Optional - Use Relative path e.g. images/whatsapp.png 
+
+
+
+#
 # Site Info
 #
 # If you want specific meta info for your <head></head> tags
