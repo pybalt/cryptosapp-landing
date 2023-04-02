@@ -93,7 +93,7 @@ download_button_text_color: white; # Optional
 #
 
 qr_code_button: images/QR-scan-me.png # Optional - Use Relative path e.g. images/qr-code.png
-whatsapp_button: images/wppbuton.png # Optional - Use Relative path e.g. images/whatsapp.png 
+whatsapp_button: images/wppbutton.png # Optional - Use Relative path e.g. images/whatsapp.png 
 
 
 
