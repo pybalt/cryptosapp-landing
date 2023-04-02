@@ -8,12 +8,8 @@
         <div class="marketing">
           <div class="app-meta">
             {% if site.enable.app_icon %}
-              <img
-                class="app-icon"
-                style="min-width: 92px;"
-                height="auto"
-                {% if site.app.icon %} src="{{ site.app.icon }}"{% endif %}
-              />
+            <img class="app-icon" style="min-width: 92px;" height="auto" {% if site.app.icon %}
+              src="{{ site.app.icon }}" {% endif %} />
             {% endif %}
             <span class="app-name">{{ site.app.name }}</span>
           </div>
@@ -24,7 +20,7 @@
 
           <p class="marketing-desc">{{ site.marketing_desc }}</p>
           <div class="buttons">
-            <img {% if site.qr_code_button %}src="{{ site.qr_code_button}}"{% endif %} alt="qr button" height="250px">
+            <img {% if site.qr_code_button %}src="{{ site.qr_code_button}}" {% endif %} alt="qr button" height="250px">
           </div>
         </div>
       </div>
@@ -34,28 +30,26 @@
 
         <!-- App Preview or Screenshot(s) -->
         <div class="device {{ site.device }}">
-          <div class = "conversation">
-          <a href="https://api.whatsapp.com/send?phone=5491173603358&text=Cuentame">
-            <img
-             class="app-screenshot"
-             {% if site.app.screenshot %}src="{{ site.app.screenshot }}"{% endif %}
-            alt="app-screenshot"/>
-            <button class = "button-chatea">Chatea ahora</button>
-          </a>
+          <div class="conversation">
+            <img class="app-screenshot" {% if site.app.screenshot %}src="{{ site.app.screenshot }}" {% endif %}
+            alt="app-screenshot" />
+            <a href="https://api.whatsapp.com/send?phone=5491173603358&text=Cuentame">
+              <button class="button-chatea">Chatea ahora</button>
+            </a>
           </div>
           <style>
-            .button-chatea{
+            .button-chatea {
               position: absolute;
               top: 50%;
               left: 50%;
-              transform: translate(-50%, 0);
-              -ms-transform: translate(-50%, 0);
-              background-color: #4CAF50;
+              transform: translate(-50%, 365%);
+              background-color: #272c27;
               color: white;
               font-size: 16px;
               padding: 12px 24px;
-              border: none;
+              border: 12px;
               cursor: pointer;
+              width: 83%;
               border-radius: 5px;
               text-align: center;
             }
